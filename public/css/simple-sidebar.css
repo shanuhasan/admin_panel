@@ -1,0 +1,105 @@
+/*!
+ * Start Bootstrap - Simple Sidebar (https://startbootstrap.com/template-overviews/simple-sidebar)
+ * Copyright 2013-2019 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-simple-sidebar/blob/master/LICENSE)
+ */
+body {
+  overflow-x: hidden;
+}
+
+#sidebar-wrapper {
+  min-height: 100vh;
+  margin-left: -15rem;
+  -webkit-transition: margin .25s ease-out;
+  -moz-transition: margin .25s ease-out;
+  -o-transition: margin .25s ease-out;
+  transition: margin .25s ease-out;
+}
+
+#sidebar-wrapper .sidebar-heading {
+  padding: 0.875rem 1.25rem;
+  font-size: 1.2rem;
+}
+
+#sidebar-wrapper .list-group {
+  width: 15rem;
+}
+
+#page-content-wrapper {
+  min-width: 100vw;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+  margin-left: 0;
+}
+
+@media (min-width: 768px) {
+  #sidebar-wrapper {
+    margin-left: 0;
+  }
+
+  #page-content-wrapper {
+    min-width: 0;
+    width: 100%;
+  }
+
+  #wrapper.toggled #sidebar-wrapper {
+    margin-left: -15rem;
+  }
+}
+
+
+html, body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* define a fixed width for the entire menu */
+.navigation {
+width: 300px;
+}
+
+/* reset our lists to remove bullet points and padding */
+.mainmenu, .submenu {
+list-style: none;
+padding: 0;
+margin: 0;
+}
+
+/* make ALL links (main and submenu) have padding and background color */
+.mainmenu a {
+display: block;
+
+text-decoration: none;
+padding: 10px;
+color: #000;
+}
+
+/* add hover behaviour */
+.mainmenu a:hover {
+  background-color: #C5C5C5;
+}
+
+
+/* when hovering over a .mainmenu item,
+display the submenu inside it.
+we're changing the submenu's max-height from 0 to 200px;
+*/
+
+.mainmenu li:hover .submenu {
+display: block;
+max-height: 200px;
+}
+
+/* hover behaviour for links inside .submenu */
+.submenu a:hover {
+  background-color: #C5C5C5;
+}
+
+/* this is the initial state of all submenus.
+we set it to max-height: 0, and hide the overflowed content.
+*/
+.submenu {
+overflow: hidden;
+max-height: 0;
+-webkit-transition: all 0.5s ease-out;
+}
